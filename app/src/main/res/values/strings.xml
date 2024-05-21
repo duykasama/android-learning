@@ -23,6 +23,10 @@
     <string name="no_account">Don\'t have an account?</string>
     <string name="sign_up">Sign up.</string>
     <string name="or">Or</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_success">Login successfully</string>
+    <string name="hello_user">Hello</string>
+    <string name="name_cleared">Username has been cleared</string>
     <string name="separator">⚪</string>
     <string name="question_mark">?</string>
 </resources>

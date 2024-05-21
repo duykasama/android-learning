@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/indexFragment">
+    <fragment
+        android:id="@+id/indexFragment"
+        android:name="com.example.demo.IndexFragment"
+        android:label="fragment_index"
+        tools:layout="@layout/fragment_index" >
+        <action
+            android:id="@+id/action_indexFragment_to_facebookLoginFragment"
+            android:duration="1000"
+            app:destination="@id/facebookLoginFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_indexFragment_to_instagramLoginFragment"
+            android:duration="1000"
+            app:destination="@id/instagramLoginFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/facebookLoginFragment"
+        android:name="com.example.demo.ui.login.FacebookLoginFragment"
+        android:label="fragment_facebook_login"
+        tools:layout="@layout/fragment_facebook_login" >
+        <action
+            android:id="@+id/action_facebookLoginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/instagramLoginFragment"
+        android:name="com.example.demo.ui.login.InstagramLoginFragment"
+        android:label="fragment_instagram_login"
+        tools:layout="@layout/fragment_instagram_login" >
+        <action
+            android:id="@+id/action_instagramLoginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.demo.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+</navigation>
