@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Demo</string>
+    <string name="title_activity_instagram">InstagramActivity</string>
+    <string name="prompt_email">Email or Phone</string>
+    <string name="instagram_prompt_email">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">LOG IN</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_facebook">FacebookActivity</string>
+    <string name="to_facebook">Open Facebook Login</string>
+    <string name="to_instagram">Open Instagram Login</string>
+    <string name="english">English</string>
+    <string name="change_language">Change</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_up_fb">Sign Up for Facebook</string>
+    <string name="forgot_login_detail">Forgot your login detail?</string>
+    <string name="get_help">Get help signing in.</string>
+    <string name="log_in_with_fb">Log in with Facebook</string>
+    <string name="no_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign up.</string>
+    <string name="or">Or</string>
+    <string name="separator">⚪</string>
+    <string name="question_mark">?</string>
+</resources>
