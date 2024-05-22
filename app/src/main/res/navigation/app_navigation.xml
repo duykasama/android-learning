@@ -11,7 +11,7 @@
         tools:layout="@layout/fragment_index" >
         <action
             android:id="@+id/action_indexFragment_to_facebookLoginFragment"
-            android:duration="1000"
+            android:duration="3000"
             app:destination="@id/facebookLoginFragment"
             app:enterAnim="@android:anim/slide_in_left"
             app:exitAnim="@android:anim/slide_out_right"
@@ -19,7 +19,7 @@
             app:popExitAnim="@android:anim/slide_out_right" />
         <action
             android:id="@+id/action_indexFragment_to_instagramLoginFragment"
-            android:duration="1000"
+            android:duration="3000"
             app:destination="@id/instagramLoginFragment"
             app:enterAnim="@android:anim/slide_in_left"
             app:exitAnim="@android:anim/slide_out_right"
