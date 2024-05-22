@@ -8,10 +8,10 @@ import java.io.IOException;
  * Class that handles authentication w/ login credentials and retrieves user information.
  */
 public class LoginDataSource {
-    private final String correctUsername = "admin";
-    private final String correctPassword = "123456";
 
     public Result<LoggedInUser> login(String username, String password) {
+        final String correctUsername = "admin";
+        final String correctPassword = "123456";
 
         try {
             // TODO: handle loggedInUser authentication
@@ -19,11 +19,11 @@ public class LoginDataSource {
                 LoggedInUser loggedInUser =
                         new LoggedInUser(
                                 java.util.UUID.randomUUID().toString(),
-                                "admin");
+                                correctUsername);
                 return new Result.Success<>(loggedInUser);
             }
 
-            throw new Exception("Wrong username or password");
+            throw new Exception();
         } catch (Exception e) {
             return new Result.Error(new IOException("Login failed", e));
         }
